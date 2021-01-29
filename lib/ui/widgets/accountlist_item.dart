@@ -1,10 +1,12 @@
 import 'package:bankingapp/core/models/account.dart';
 import 'package:bankingapp/ui/shared/app_colors.dart';
+import 'package:bankingapp/ui/shared/text_styles.dart';
 import 'package:flutter/material.dart';
 
 class AccountListItem extends StatelessWidget {
   final Account account;
   final Function onTap;
+
   const AccountListItem({this.account, this.onTap});
 
   @override
@@ -24,18 +26,15 @@ class AccountListItem extends StatelessWidget {
                   padding: EdgeInsets.symmetric(vertical: 8 / 4),
                   child: Text(
                     account.accountNumber,
-                    style: TextStyle(color: Colors.black54),
+                    style: TextStyle(color: textColor),
                   ),
                 ),
                 Text(
-                  "R ${account.balance}",
-                  style: TextStyle(
-                      color: Colors.black54,
-                      fontWeight: FontWeight.bold),
+                  'R ${account.balance == null ? account.balance = 0 : account.balance}',
+                  style: subHeaderStyle,
                 ),
-                Text(
-                  " ${account.active}",
-                  style: TextStyle(fontWeight: FontWeight.bold),
+                Text('${account.active != true ? 'Not Active' : 'Active'}',
+                  style: subHeaderStyle,
                 )
               ],
             ),
