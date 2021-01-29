@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:hexcolor/hexcolor.dart';
 
-// const Color backgroundColor = Color('#df7861'.toColor);
-const Color headerColor = Color.fromARGB(255, 255, 246, 196);
+Color backgroundColor = HexColor('#fcf8e8');
+Color circularColor  = HexColor('#d4e2d4');
+Color shadowColor  = HexColor('#ecb390');
+Color headerColor = HexColor('#df7861');

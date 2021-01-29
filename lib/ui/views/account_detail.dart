@@ -12,6 +12,14 @@ class AccountView extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: backgroundColor,
+      appBar: AppBar(
+        automaticallyImplyLeading: false,
+        backgroundColor: headerColor,
+        title: Text(
+          'Personal Bank',
+        ),
+        elevation: 0.0,
+      ),
       body: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 20.0),
         child: Column(

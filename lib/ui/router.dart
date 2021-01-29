@@ -1,6 +1,6 @@
 import 'package:bankingapp/core/models/account.dart';
-import 'package:bankingapp/ui/views/account_view.dart';
-import 'package:bankingapp/ui/views/home_view.dart';
+import 'package:bankingapp/ui/views/account_detail.dart';
+import 'package:bankingapp/ui/views/home.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
